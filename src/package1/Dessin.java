@@ -82,9 +82,9 @@ public class Dessin extends JPanel{
     public void animer() {
         //  dessiner les Objets que contient le dessin
         for (IObjetDessinable c : ObjDess) {
-        	c.deplacer();
-            
-        }
+        	if ( c instanceof IObjetAnimable) {c.deplacer();
+        	}
+        	}
     }
 
 }

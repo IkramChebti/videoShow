@@ -74,5 +74,6 @@ public abstract class Forme implements IObjetDessinable {
         this.x = x;
         this.y = y;
     }
+   
 
 }

@@ -38,10 +38,21 @@ public class LancerApp1 {
 		Visage v = new Visage (d);
 		d.ajouterObjet(v);	
 		
-		Forme f1 = new Etoile(350, 100, 50, 8.f, Color.RED, Color.YELLOW);
-		Forme f2 = new PolygoneRegulier(5, 240, 40, 40, 4.0f, Color.DARK_GRAY, null);
+		Forme f1 = new Etoile(40, 100, 50, 8.f, Color.RED, Color.YELLOW);
+		Forme f2 = new PolygoneRegulier(3, 80, 10, 10, 4.0f, Color.DARK_GRAY, Color.GRAY);
 		d.ajouterObjet(f1);
 		d.ajouterObjet(f2);
+		Forme f3 = new Etoile(350, 100, 50, 8.f, Color.GREEN, Color.GREEN);
+		Forme f4 = new PolygoneRegulier(5, 240, 40, 40, 4.0f, Color.DARK_GRAY, Color.BLACK);
+		d.ajouterObjet(f3);
+		d.ajouterObjet(f4);
+		
+		MvtCirculaire m1 = new MvtCirculaire (100, 300, 300, 200, 100);
+        m1.deplacer(f1);
+        MvtCirculaire m2 = new MvtCirculaire (130, 200, 300, 200, 150);
+        m2.deplacer(f2);
+
+		
 		
 		while(true) {
 		// la zone de dessin se réaffiche

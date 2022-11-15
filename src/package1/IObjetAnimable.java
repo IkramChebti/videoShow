@@ -4,5 +4,5 @@ import java.awt.Graphics;
 
 public interface IObjetAnimable extends IObjetDessinable{
 
-	void deplacer (Graphics g); 
+	void deplacer (); 
 }

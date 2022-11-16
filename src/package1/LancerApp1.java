@@ -57,6 +57,12 @@ public class LancerApp1 {
 		AnimationForme a2 = new AnimationForme(f2,m2);
 		d.ajouterObjet(a2);
 		
+		/** QUESTION 19  
+		 * 
+       	 MvtCirculaire m3 = new MvtCirculaire (50, 300, 300, 100, 100);
+		 m3.deplacer(v);
+		 AnimationForme a3 = new AnimationForme(v,m3);
+			d.ajouterObjet(a3); */
 		
 		while(true) {
 		// la zone de dessin se réaffiche

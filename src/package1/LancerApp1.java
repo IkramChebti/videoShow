@@ -23,6 +23,7 @@ public class LancerApp1 {
 		Dessin d = new Dessin();
 		laFenetre.getContentPane().add(d);
 		
+		
 		// affiche la fenêtre
 		laFenetre.setVisible(true);
 		
@@ -48,10 +49,13 @@ public class LancerApp1 {
 		d.ajouterObjet(f4);
 		
 		MvtCirculaire m1 = new MvtCirculaire (100, 300, 300, 200, 100);
-        m1.deplacer(f1);
+		 m1.deplacer(f1);
         MvtCirculaire m2 = new MvtCirculaire (130, 200, 300, 200, 150);
         m2.deplacer(f2);
-
+        AnimationForme a1 = new AnimationForme(f1,m1);
+		d.ajouterObjet(a1);
+		AnimationForme a2 = new AnimationForme(f2,m2);
+		d.ajouterObjet(a2);
 		
 		
 		while(true) {

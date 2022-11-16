@@ -79,6 +79,7 @@ public class Dessin extends JPanel{
      * fait deplacer d'un déplacement élémentaire chacun des train cercles
      * que la zone de dessin contient.
      */
+   
     public void animer() {
         //  dessiner les Objets que contient le dessin
         for (IObjetDessinable c : ObjDess) {
